@@ -1,5 +1,9 @@
 This project is built with [Parcel.js](https://parceljs.org/).
 
+[DEMO](https://anya-shults.github.io/test-task_galanix_task-1/)
+
+Stack: HTML, CSS, Parcel.
+
 ## Getting Started
 
 First, clone this repository to your local machine:

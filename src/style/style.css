@@ -1,0 +1,109 @@
+:root {
+  --flag-width: 300px;
+  --flag-height: 216px;
+  --stripe-height: calc(var(--flag-height) / 2);
+  --circle-diameter: 130px;
+  --red-horizontal-height: calc(var(--flag-height) / 9);
+  --white-horizontal-height: calc(var(--flag-height) / 18 * 4);
+}
+
+.flags-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.flag {
+  height: var(--flag-height);
+  width: var(--flag-width);
+}
+
+.ukraine__blue-stripe {
+  height: var(--stripe-height);
+  background: #0057b8;
+}
+
+.ukraine__yellow-stripe {
+  height: var(--stripe-height);
+  background:	#ffd700;
+}
+
+.japan__red-circle {
+  position: absolute;
+  width: var(--circle-diameter);
+  height: var(--circle-diameter);
+  background: #bc002d;
+  border-radius: 50%;
+  top: calc(var(--flag-height) / 2 - var(--circle-diameter) / 2);
+  left: calc(var(--flag-width) / 2 - var(--circle-diameter) / 2);
+  
+}
+
+.japan__white-background {
+  position: relative;
+  width: var(--flag-width);
+  height: var(--flag-height);
+  background-color:aliceblue
+}
+
+.iceland__blue-background {
+  position: relative;
+  width: var(--flag-width);
+  height: var(--flag-height);
+  background-color: #02529C;
+}
+
+.iceland__white-stripe {
+  position: absolute;
+  background-color: #fff;
+}
+
+.iceland__red-stripe {
+  position: absolute;
+  background-color: #DC1E35;
+}
+
+.iceland__white-horizontal-stripe {
+  height: var(--white-horizontal-height);
+  width: 100%;
+  top: calc(var(--flag-height) / 2 - var(--white-horizontal-height) / 2);
+}
+
+.iceland__white-vertical-stripe {
+  height: 100%;
+  width: var(--white-horizontal-height);
+  left: calc(var(--flag-width) / 25 * 7)
+}
+
+.iceland__red-horizontal-stripe {
+  height: var(--red-horizontal-height);
+  width: 100%;
+  top: calc(var(--flag-height) / 2 - var(--red-horizontal-height) / 2);
+}
+
+.iceland__red-vertical-stripe {
+  height: 100%;
+  width: var(--red-horizontal-height);
+  left: calc(var(--flag-width) / 25 * 8)
+}
+
+.flag__czech {
+  position: relative;
+}
+
+.czech__white-stripe {
+  height: calc(var(--flag-height) / 2);
+}
+
+.czech__red-stripe {
+  height: calc(var(--flag-height) / 2);
+  background-color: #d7141a;
+}
+
+.czech__blue-triangle {
+  position: absolute;
+  top: 0;
+  border-top: calc(var(--flag-height) / 2) solid transparent;
+  border-bottom: calc(var(--flag-height) / 2) solid transparent;
+  border-left: #11457e calc(var(--flag-width) / 2) solid;
+}
